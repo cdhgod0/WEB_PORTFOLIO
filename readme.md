@@ -3,3 +3,4 @@
 ## Getting Started
  - [프로젝트 메인 주소](https://github.com/본인아이디/WEB_PORTFOLIO)
 ## 1일차 메인 페이지 개발 완료! (문제 포함)
+## 2일차 기본 웹사이트 개발 완료!
