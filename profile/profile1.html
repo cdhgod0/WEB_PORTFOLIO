@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>웹 페이지 제목</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <scrip src="https://kit.fontawesome.com/fb9d5a69c7.js" crossorigin="anonymous"></script>
+  <script src="js/popup.js" defer></script>
+  <script src="js/search.js" defer></script>
+</head>
+<body style="background-color: white;">
+  <nav class="navbar navbar-expand-lg" style="background-color: #665494;">
+    <div class="container-fluid">
+      <img src="../image/logo.jpg" width="60" height="60" alt="로고이미지" class="img-fluid">
+      <a class="navbar-brand" href="#">개인 포트폴리오</a>  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">메인화면</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile1.html">개인소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile2.html">학력</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile3.html">개인능력</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile4.html">프로젝트</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              관련링크
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.naver.com/" target="_blank">네이버</a></li>
+              <li><a class="dropdown-item" href="https://www.daum.net/" target="_blank">다음</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://www.youtube.com/" target="_blank">유튜브</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Link</a>
+          </li>
+        </ul>
+
+        <!--
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">구글 검색</button>
+        </form>
+        -->
+        <form class="d-flex" role="search" onsubmit="return googleSearch();">
+          <input class="form-control me-2" id="search_input" name="q" type="search" placeholder="키워드 입력" aria-label="Search">
+          <button class="btn btn-outline-success" id="search_btn" type="submit">검색하기</button>
+          </form>          
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>개인 소개</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4">
+          <img src="../image/welcome.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 content">
+          <h2>저는 풀스택 개발자 &amp; 정보보안 전문가를 하고 싶습니다.</h2>
+          <p class="fst-italic py-1">
+              <p class="mb-2"><span class="text-primary font-italic me-1">개인 슬로건 및 간략한 소개</span>
+            </p>
+            저는 컴퓨터 과학에 대한 열정과 탐구 정신을 가진 **[이름]**입니다. 
+            "저는 마치 주자(諸葛亮)가 삼국지에서 뛰어난 전략으로 천하를 통일한 것처럼 명석하고 계획적인 사고방식을 가지고, 
+            끊임없는 노력과 준비를 통해 목표를 달성하려고 노력합니다."
+          </p>
+          <p class="py-3">
+            컴퓨터 과학을 전공하게 되었고, 4년간의 학업을 통해 컴퓨터 시스템, 알고리즘, 데이터 구조, 운영 체제, 네트워킹, 보안 등 다양한 분야를 깊이 있게 공부했습니다. 
+            저는 단순히 지식을 쌓는 것에만 만족하지 않고, 끊임없이 새로운 기술을 배우고 실제 프로젝트에 적용하며 실력을 키워왔습니다. 특히, 프로그래밍 언어인 **[언어 1, 언어 2]**를 활용하여 
+            웹사이트, 모바일 앱, 게임 등을 개발하며 프로그래밍 능력을 향상시켰습니다. 또한, 정보 보안에 대한 관심이 높아 **[보안 관련 자격증]**을 취득하고, **[보안 관련 프로젝트]**에 참여하며 보안 전문가로서의 역량을 키워왔습니다.
+            저는 꼼꼼하고 책임감 있는 성격이며, 어려운 문제에도 끈기 있게 도전하고 해결해나가는 능력을 가지고 있습니다. 또한, 협업적인 성격으로 팀원들과 적극적으로 소통하고 협력하며 목표를 달성해나가는 데 능숙합니다. 
+            저는 앞으로 제가 가진 컴퓨터 과학 지식과 개발 및 보안 전문성을 바탕으로 **[회사 이름]**에서 **[희망하는 직무]**로서 사회에 기여하고 싶습니다. 저에게 주어진 기회라면 최선을 다해 노력하고 발전하는 모습을 보여드리겠습니다.
+          </p>
+        </div>
+        
+        <div class="row gy-4 justify-content-center"></div>
+      </div>
+    </div>
+  </section><!-- /About Section -->
+
+  <div style="display: flex; justify-content: center; background-color: #665494;">
+    <h3 style="font-size: 20px; font-weight: bold; font-family: '굴림'; color: #000000;"><br>© 2024. All Rights Reserved. Built by 이름<br></h3>
+  </div>
+
+</body>
+</html>
